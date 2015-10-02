@@ -1,9 +1,11 @@
 <div ng-controller="MakerController as MC">
-    <div ng-bind-html="jsonHtml.html"></div>
-    <div class="well">
+    <div>
         <div ng-repeat="field in fields">
-            <div ng-bind-html="field.html"></div>
-            <br>
+            <div class="form-group col-md-4">
+                <label>{{field.tag}}</label>
+                <div ng-bind-html="field.html"></div>
+                <br>
+            </div>
         </div>
     </div>
 </div>
